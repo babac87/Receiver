@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
-  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     BeaconManager.shared.startRanging()
@@ -46,9 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let rootViewController = window?.rootViewController
     let launchScreenStoryboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
     let launchScreenController = launchScreenStoryboard.instantiateViewController(withIdentifier: "LaunchScreen")
-    
     window?.rootViewController = launchScreenController
-    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5), execute: {
+    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(Int(timeInterval)), execute: {
       self.window?.rootViewController = rootViewController
     })
   }

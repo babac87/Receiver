@@ -20,6 +20,7 @@ class BeaconManager: NSObject {
   // Estimote UUID string
   private let estimoteUUIDString = "B9407F30-F5F8-466E-AFF9-25556B57FE6D"
   
+  // Timestamp of last time unlock message was sent
   private var lastTimestamp = 0.0
   
   // Private singleton initializer
@@ -27,7 +28,6 @@ class BeaconManager: NSObject {
     super.init()
     manager.delegate = self
     manager.requestAlwaysAuthorization()
-    startRanging()
   }
   
   /// Starts ranging process for iBeacons
