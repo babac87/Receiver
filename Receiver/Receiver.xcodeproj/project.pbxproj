@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4B56C41F93902E004FD611 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4B56C31F93902E004FD611 /* Notifications.swift */; };
+		EE4E4DB01F924596005D60EF /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE254FC51F923C550061248F /* BeaconManager.swift */; };
+		EE4E4DB11F924596005D60EF /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE254FC41F923C550061248F /* RESTClient.swift */; };
+		EE99DF4F1F912895005E2087 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99DF4E1F912895005E2087 /* ProfileViewController.swift */; };
+		EE99DF541F920757005E2087 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99DF531F920757005E2087 /* ProfileTableViewCell.swift */; };
 		EED228CB1F90C324001B9A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED228CA1F90C324001B9A0A /* AppDelegate.swift */; };
-		EED228CD1F90C324001B9A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED228CC1F90C324001B9A0A /* ViewController.swift */; };
+		EED228CD1F90C324001B9A0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED228CC1F90C324001B9A0A /* MainViewController.swift */; };
 		EED228D01F90C324001B9A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED228CE1F90C324001B9A0A /* Main.storyboard */; };
 		EED228D21F90C324001B9A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED228D11F90C324001B9A0A /* Assets.xcassets */; };
 		EED228D51F90C324001B9A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED228D31F90C324001B9A0A /* LaunchScreen.storyboard */; };
+		EEF9AA151F922AF60040FDD8 /* ProfileMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9AA141F922AF60040FDD8 /* ProfileMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE254FC41F923C550061248F /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RESTClient.swift; path = Receiver/Handlers/RESTClient.swift; sourceTree = SOURCE_ROOT; };
+		EE254FC51F923C550061248F /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeaconManager.swift; path = Receiver/Handlers/BeaconManager.swift; sourceTree = SOURCE_ROOT; };
+		EE4B56C31F93902E004FD611 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		EE99DF4E1F912895005E2087 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EE99DF531F920757005E2087 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		EED228C71F90C324001B9A0A /* Receiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Receiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED228CA1F90C324001B9A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EED228CC1F90C324001B9A0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED228CC1F90C324001B9A0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EED228CF1F90C324001B9A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED228D11F90C324001B9A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED228D41F90C324001B9A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED228D61F90C324001B9A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF9AA141F922AF60040FDD8 /* ProfileMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE254FC31F923C440061248F /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				EE4B56C31F93902E004FD611 /* Notifications.swift */,
+				EE254FC51F923C550061248F /* BeaconManager.swift */,
+				EE254FC41F923C550061248F /* RESTClient.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		EE99DF521F920717005E2087 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE99DF531F920757005E2087 /* ProfileTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EED228BE1F90C324001B9A0A = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +85,33 @@
 			isa = PBXGroup;
 			children = (
 				EED228CA1F90C324001B9A0A /* AppDelegate.swift */,
-				EED228CC1F90C324001B9A0A /* ViewController.swift */,
+				EED228DF1F90CD65001B9A0A /* ViewControllers */,
+				EEF9AA131F922ACE0040FDD8 /* Models */,
+				EE99DF521F920717005E2087 /* Views */,
+				EE254FC31F923C440061248F /* Handlers */,
 				EED228CE1F90C324001B9A0A /* Main.storyboard */,
 				EED228D11F90C324001B9A0A /* Assets.xcassets */,
 				EED228D31F90C324001B9A0A /* LaunchScreen.storyboard */,
 				EED228D61F90C324001B9A0A /* Info.plist */,
 			);
 			path = Receiver;
+			sourceTree = "<group>";
+		};
+		EED228DF1F90CD65001B9A0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EED228CC1F90C324001B9A0A /* MainViewController.swift */,
+				EE99DF4E1F912895005E2087 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEF9AA131F922ACE0040FDD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEF9AA141F922AF60040FDD8 /* ProfileMenuItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EED228CD1F90C324001B9A0A /* ViewController.swift in Sources */,
+				EE4B56C41F93902E004FD611 /* Notifications.swift in Sources */,
+				EE4E4DB01F924596005D60EF /* BeaconManager.swift in Sources */,
+				EE4E4DB11F924596005D60EF /* RESTClient.swift in Sources */,
+				EED228CD1F90C324001B9A0A /* MainViewController.swift in Sources */,
+				EE99DF541F920757005E2087 /* ProfileTableViewCell.swift in Sources */,
+				EE99DF4F1F912895005E2087 /* ProfileViewController.swift in Sources */,
+				EEF9AA151F922AF60040FDD8 /* ProfileMenuItem.swift in Sources */,
 				EED228CB1F90C324001B9A0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4KEZ533E2;
 				INFOPLIST_FILE = Receiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kisi.Receiver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,12 +346,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4KEZ533E2;
 				INFOPLIST_FILE = Receiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kisi.Receiver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
